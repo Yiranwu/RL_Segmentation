@@ -1,0 +1,55 @@
+Exercise for Chapter 1:
+
+Ex1.1: Hopefully it will learn different policies. But the capacity might not improve.
+
+Ex1.2: Treat symmetric states as the same. If opponent treat them differently, we should. Because
+       in this case the optimal step for symmetric states can be different(the same for state values).
+
+Ex1.3: Basically worse. No exploration, biased reward estimation, etc.
+
+Ex1.4: The one without will be better.
+
+Ex1.5: Omitted.
+
+Exercise for Chapter 2:
+
+Ex2.1: 0.75.
+
+Ex2.2: Definite:2 5   Possible: 1 2 3 4 5
+
+Ex2.3: Epsilon greedy 0.01. (0.991*vmax+0.009*vavg)-(0.91*vmax+0.09*vavg)
+
+Ex2.4: Under Q_n=Q_{n-1}+\alpha_n(a)(R_n-Q_{n-1}),
+       weight for R_k will be \prod_{i=k+1}^n(1-\alpha_i(a))\alpha_k(a)
+	   
+Ex2.5: Omitted.
+
+Ex2.6: Estimation of low value arms decreases much quicker, and it takes several play of best arm
+       to be comparable with them(high spike). After best arm becomes suboptimal, actually several
+	   arms are superior and you have to play all of them before return to the best one(low spikes).
+	   
+Ex2.7: Omitted.
+
+Ex2.8: Omitted.
+
+Exercise for Chapter 3:
+
+Ex3.1: Omitted.
+
+Ex3.2: Not really. Like opening an umbrella.
+
+Ex3.3: It depends highly on your task.
+       Env->where you cannot have actual control.
+	   Act->what you want to learn
+	   
+Ex3.4: -\gamma^k. No difference except for episodic view are enforced to terminate
+       after some timesteps.
+	   
+Ex3.5: Time spent is not penalized. Thus wandering around does no harm and the agent is not urged
+       to make progress.
+	   
+Ex3.6: Omitted.
+
+Ex3.7: Omitted.
+
+Ex3.8: 
